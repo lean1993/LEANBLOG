@@ -1,0 +1,220 @@
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ pwd
+/c/Users/RUDYCQ/proyecto1
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ cd ..
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ git config -l
+pack.packsizelimit=2g
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=C:/Program Files/Git/mingw32/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+pull.rebase=false
+user.email=LRAMOS.cco@gmail.com
+user.name=LRAMOS
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ ssh-keygen -t rsa -b 4096 -C "LramosLramos
+> ssh-keygen -t rsa -b 4096 -C "LramosLramosq
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/RUDYCQ/.ssh/id_rsa):
+Created directory '/c/Users/RUDYCQ/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Passphrases do not match.  Try again.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/RUDYCQ/.ssh/id_rsa
+Your public key has been saved in /c/Users/RUDYCQ/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:lhMHNBQJgrFN16GqoLtInvTVV+YX5n+P492vCyHoNuo LramosLramos
+ssh-keygen -t rsa -b 4096 -C LramosLramosq
+The key's randomart image is:
++---[RSA 4096]----+
+|  .oo o=B+       |
+|  .+ o .oo       |
+|  . . . . .      |
+|     .   =       |
+|.   .   S .o.o   |
+|.. .  .o .+.o..  |
+|.o.  . .+. ..o   |
+|=.o .  o..  ..ooo|
+|++ . .E      .==O|
++----[SHA256]-----+
+
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ ssh-keygen -t rsa -b 4096 -C "Lramos.cco@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/RUDYCQ/.ssh/id_rsa):
+/c/Users/RUDYCQ/.ssh/id_rsa already exists.
+Overwrite (y/n)?
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ y
+bash: y: command not found
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ n
+bash: n: command not found
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ overwrite y
+bash: overwrite: command not found
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ ssh-keygen -t rsa -b 4096 -C "Lramos.cco@gmail.com"
+Generating public/private rsa key pair.
+
+Enter file in which to save the key (/c/Users/RUDYCQ/.ssh/id_rsa): /c/Users/RUDYCQ/.ssh/id_rsa already exists.
+Overwrite (y/n)? y
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/RUDYCQ/.ssh/id_rsa
+Your public key has been saved in /c/Users/RUDYCQ/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:gTwfdOc7TBlHmQScWiDHIBflscHKXOcDFBWbRAEnTG8 Lramos.cco@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|      . *X&B@B+o |
+|     . = =*@=*o  |
+|      +oooo*E    |
+|       o+o.+o.   |
+|        S   +.   |
+|             .   |
+|                 |
+|                 |
+|                 |
++----[SHA256]-----+
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ eval $(ssh-agent -s)
+Agent pid 2379
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ ~
+bash: /c/Users/RUDYCQ: Is a directory
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ cd ~/.ssh/
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/.ssh
+$ LS -AL
+id_rsa  id_rsa.pub
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/.ssh
+$ ls -al
+total 24
+drwxr-xr-x 1 RUDYCQ 197121    0 sep 19 18:01 ./
+drwxr-xr-x 1 RUDYCQ 197121    0 sep 19 18:01 ../
+-rw-r--r-- 1 RUDYCQ 197121 3389 sep 19 18:06 id_rsa
+-rw-r--r-- 1 RUDYCQ 197121  746 sep 19 18:23 id_rsa.pub
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/.ssh
+$ ssh-add ~/.ssh/id_rsa
+Identity added: /c/Users/RUDYCQ/.ssh/id_rsa (Lramos.cco@gmail.com)
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/.ssh
+$ cd ..
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~
+$ cd proyecto1/
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git remote -v
+origin  https://github.com/lean1993/LEANBLOG.git (fetch)
+origin  https://github.com/lean1993/LEANBLOG.git (push)
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git remote set-url origin git@github.com:lean1993/LEANBLOG.git
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git remote -v
+origin  git@github.com:lean1993/LEANBLOG.git (fetch)
+origin  git@github.com:lean1993/LEANBLOG.git (push)
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ code lean.html
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git pull
+The authenticity of host 'github.com (140.82.114.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com,140.82.114.3' (RSA) to the list of known hosts.
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git pull origin master
+Warning: Permanently added the RSA host key for IP address '140.82.112.4' to the list of known hosts.
+From github.com:lean1993/LEANBLOG
+ * branch            master     -> FETCH_HEAD
+Merge made by the 'recursive' strategy.
+ historia.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   lean.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git commit -am "una version del leanblog"
+[master cf05f74] una version del leanblog
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git pull origin master
+Warning: Permanently added the RSA host key for IP address '140.82.113.3' to the list of known hosts.
+From github.com:lean1993/LEANBLOG
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$ git push origin master
+Warning: Permanently added the RSA host key for IP address '140.82.113.4' to the list of known hosts.
+Enumerating objects: 12, done.
+Counting objects: 100% (11/11), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 854 bytes | 427.00 KiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 2 local objects.
+To github.com:lean1993/LEANBLOG.git
+   f09ebf0..cf05f74  master -> master
+
+RUDYCQ@RUDYCQ-PC MINGW32 ~/proyecto1 (master)
+$
